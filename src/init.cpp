@@ -58,7 +58,7 @@ Napi::Array Wrapper::add_get_params(const Napi::CallbackInfo &info)
                                     "rs:Float64Array",          "sources:Uint32Array",
                                     "destinations:Uint32Array", "time:Number",
                                     "width:Number",             "height:Number",
-                                    "nb_channel:Number",         "nb_couple:Number",
+                                    "nb_channel:Number",        "nb_couple:Number",
                                     "nb_rings:Uint32Array"};
 
     Napi::Array return_value = Napi::Array::New(env, tmp.size());
