@@ -7,6 +7,9 @@
 #include <Wrapper/WrapperMultiChannel.hh>
 
 std::vector<double> Wrapper::simulate_multi_channel(double *tab_init_1D,
+                                            int nb_channel,
+                                            int nb_couple,
+                                            int *nb_rings,
                                             int R,
                                             double kernel_mu,
                                             double kernel_sigma,
@@ -19,10 +22,7 @@ std::vector<double> Wrapper::simulate_multi_channel(double *tab_init_1D,
                                             int *destinations,
                                             double time,
                                             int width,
-                                            int height,
-                                            int nb_channel,
-                                            int nb_couple,
-                                            int *nb_rings)
+                                            int height)
 {
     std::vector<std::vector<std::vector<double>>> tab_init_3d{};
     std::vector<double> return_value{};

@@ -13,6 +13,9 @@
 namespace Wrapper
 {
     std::vector<double> simulate_multi_channel(double *tab_init_1D,
+                                            int nb_channel,
+                                            int nb_couple,
+                                            int *nb_rings,
                                             int R,
                                             double kernel_mu,
                                             double kernel_sigma,
@@ -25,9 +28,6 @@ namespace Wrapper
                                             int *destinations,
                                             double time,
                                             int width,
-                                            int height,
-                                            int nb_channel,
-                                            int nb_couple,
-                                            int *nb_rings);
+                                            int height);
 
 } // namespace Wrapper
